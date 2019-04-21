@@ -88,8 +88,9 @@
 
 
 
-The project was carried out at the Korea Institute of Public Intelligence's Context Lab.
+
+
+The project was carried out at the Korea Ai institute's Context Lab.
 Other activities can be found at the link below.
 
 https://github.com/labcontext/Introduction
-
