@@ -89,9 +89,10 @@
 
 
 
-
+## CONTEXT LAB
 The project was carried out at the Korea Ai institute's Context Lab.
 Other activities can be found at the link below.
+
 해당 프로젝트는 한국인공지능연구소 **맥락랩**에서 진행되었습니다.
 다른 활동을 보고싶으시다면 아래 링크에서 확인 가능합니다.
 https://github.com/labcontext/Introduction
