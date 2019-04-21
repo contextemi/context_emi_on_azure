@@ -86,3 +86,10 @@
 1. laughter detection : https://github.com/jrgillick/laughter-detection
 2.  Azure Official Github:  <https://github.com/MicrosoftDocs/azure-docs/blob/651e591f985e6af327cbaad4582e2c1a1240e36a/articles/media-services/video-indexer/video-indexer-output-json-v2.md>
 
+
+
+The project was carried out at the Korea Institute of Public Intelligence's Context Lab.
+Other activities can be found at the link below.
+
+https://github.com/labcontext/Introduction
+
