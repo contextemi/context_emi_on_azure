@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>비디오캡션 가져오기</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        
+
+    $(function(){
+
+        var params = {
+
+            // Request parameters
+
+            "format": "Txt"
+
+        };
+
+
+
+        $.ajax({
+
+
+
+            url: "https://api.videoindexer.ai/trial/Accounts/c0275980-4810-4d07-bd08-dcdda469fb3a/Videos/7ea79c1455/Captions?" + $.param(params),
+
+            beforeSend: function(xhrObj){
+
+                // Request headers
+
+            },
+
+            type: "GET"
+
+        })
+
+        .done(function(data) {
+
+            $('#output').val(data);
+
+            //window 전송 외에 post로 ajax를 이용하여 변수를 전달 할 수 있음.
+
+        })
+
+        .fail(function() {
+
+                //alert(e.responseText);
+
+                alert('error');
+
+            });
+
+    });
+
+
+
+    function saveText(){
+
+        $.ajax({
+
+            url:'saveText.php',
+
+            method:'POST',
+
+            data:{
+
+                text:$('#output').val()
+
+            }
+
+        })
+
+        .done(function(data){
+
+            $('result').val(data);
+
+        })
+
+        .fail(function(){
+
+            alert('fail');
+
+        });
+
+    }
+
+
+
+
+
+    </script>
+
+
+
+    <textarea name=text id="output" cols="40" rows="10"> </textarea>
+
+    <br>
+
+    <input type="submit" value=save id='save_button' onclick='saveText()'>
+
+    <h6 id="result"></h6>
+
+
+
+</body>
+
+</html>
+
+
